@@ -7,18 +7,28 @@ $(document).ready (function() {
   // append random number to target id
   $("#target").text(random);
 
-  // setting up random numbers for each jewel
-  // random number has to be between 1 - 12
+  // set up random number for each jewel
+  // random number between 1 - 10
 
-  // decaring variables for tallies
+  var paul = Math.floor(Math.random() * 20) + 1;
+  var sappy = Math.floor(Math.random() * 20) + 1;
+  var amIreal = Math.floor(Math.random() * 20) + 1;
+  var ratherBeUsing = Math.floor(Math.random() * 20) + 1;
 
-  // reset the game
+  // set up click for jewels
+
+  // declare variables for tallies
+  var total = 0;
+  var rock = 0;
+  var suck = 0;
+
+  // set win/lose conditions
 
   // add the wins to the userTotal
 
   // add the losses to the userTotal
 
-  // set up click for jewels
-
-  // set win/lose conditions
+  // reset the game
+  $('#uWin').text(rock);
+  $('#uSuk').text(suck);
 });
