@@ -12,23 +12,62 @@ $(document).ready (function() {
 
   var paul = Math.floor(Math.random() * 20) + 1;
   var sappy = Math.floor(Math.random() * 20) + 1;
-  var amIreal = Math.floor(Math.random() * 20) + 1;
-  var ratherBeUsing = Math.floor(Math.random() * 20) + 1;
+  var am_i_real = Math.floor(Math.random() * 20) + 1;
+  var rather_be_using = Math.floor(Math.random() * 20) + 1;
+  var on_your_mark = 0;
 
   // set up click for jewels
 
-  // declare variables for tallies
-  var total = 0;
-  var rock = 0;
-  var suck = 0;
+  $("#butt1").on ("click", function(){
+    on_your_mark = on_your_mark + paul;
+      console.log("New Total= " + on_your_mark);
+  //  $('final_score').text(on_your_mark);
+          //sets win/lose conditions
+  //      if (current_score == random){
+    //      yerp();
+    //    }
+    //    else if (current_score > random){
+    //      nerp();
+    //    }
+  });
 
-  // set win/lose conditions
+  $("#butt2").on ("click", function(){
+    on_your_mark = on_your_mark + sappy;
+      console.log("New Total= " + on_your_mark);
+  //  $('final_score').text(on_your_mark);
+          //sets win/lose conditions
+  //      if (current_score == random){
+    //      yerp();
+    //    }
+    //    else if (current_score > random){
+    //      nerp();
+    //    }
+  });
 
-  // add the wins to the userTotal
+  $("#butt3").on ("click", function(){
+    on_your_mark = on_your_mark + am_i_real;
+      console.log("New Total= " + on_your_mark);
+  //  $('final_score').text(on_your_mark);
+          //sets win/lose conditions
+  //      if (current_score == random){
+    //      yerp();
+    //    }
+    //    else if (current_score > random){
+    //      nerp();
+    //    }
+  });
 
-  // add the losses to the userTotal
+  $("#butt4").on ("click", function(){
+    on_your_mark = on_your_mark + rather_be_using;
+      console.log("New Total= " + on_your_mark);
+  //  $('final_score').text(on_your_mark);
+          //sets win/lose conditions
+  //      if (current_score == random){
+    //      yerp();
+    //    }
+    //    else if (current_score > random){
+    //      nerp();
+    //    }
+  });
 
-  // reset the game
-  $('#uWin').text(rock);
-  $('#uSuk').text(suck);
 });
