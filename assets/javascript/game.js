@@ -8,7 +8,7 @@ $(document).ready (function() {
   $("#target").text(random);
 
   // set up random number for each jewel
-  // random number between 1 - 10
+  // random number between 1 - 20
 
   var paul = Math.floor(Math.random() * 20) + 1;
   var sappy = Math.floor(Math.random() * 20) + 1;
@@ -22,7 +22,7 @@ $(document).ready (function() {
     on_your_mark = on_your_mark + paul;
       console.log("New Total= " + on_your_mark);
     $("#current_score").text(on_your_mark);
-          //sets win/lose conditions
+          // set win/lose conditions
   //      if (current_score == random){
     //      yerp();
     //    }
@@ -35,7 +35,7 @@ $(document).ready (function() {
     on_your_mark = on_your_mark + sappy;
       console.log("New Total= " + on_your_mark);
     $("#current_score").text(on_your_mark);
-          //sets win/lose conditions
+          // set win/lose conditions
   //      if (current_score == random){
     //      yerp();
     //    }
@@ -48,7 +48,7 @@ $(document).ready (function() {
     on_your_mark = on_your_mark + am_i_real;
       console.log("New Total= " + on_your_mark);
     $("#current_score").text(on_your_mark);
-          //sets win/lose conditions
+          // set win/lose conditions
   //      if (current_score == random){
     //      yerp();
     //    }
@@ -61,7 +61,7 @@ $(document).ready (function() {
     on_your_mark = on_your_mark + rather_be_using;
       console.log("New Total= " + on_your_mark);
     $("#current_score").text(on_your_mark);
-          //sets win/lose conditions
+          // set win/lose conditions
   //      if (current_score == random){
     //      yerp();
     //    }
